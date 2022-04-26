@@ -1,3 +1,3 @@
-# proxmox_scripts
+# Proxmox_Scripts
 ## Usage
 These scripts are independent and are used solving common issues I have on Proxmox VE 7.1-12
