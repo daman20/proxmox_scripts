@@ -1,11 +1,9 @@
 #!/bin/sh
-echo '---Existing locks---'
+echo '---Unlocking VM---'
 qm unlock $1
-ls -l /run/lock/qemu-server
+echo '---Removing Lock file---'
 rm -f /run/lock/qemu-server/lock-$1.conf
+echo '---Unlocking VM (again)---'
 qm unlock $1
-echo
-echo '---Remaining locks---'
-ls -l /run/lock/qemu-server
 echo '---Forceably Stopping VM---'
 qm stop $1
