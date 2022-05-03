@@ -15,6 +15,7 @@ jobs:
       - run: |
           for changed_file in ${{ steps.files.outputs.new }}; do
               echo "|${changed_file}|description|dependencies|options|${{ steps.date.outputs.date }}|" >> README.md
+              echo "|${changed_file}|description|dependencies|options|${{ steps.date.outputs.date }}|"
           done
 
       - name: Commit and push changes
