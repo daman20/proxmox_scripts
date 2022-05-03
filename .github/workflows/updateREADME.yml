@@ -11,9 +11,11 @@ jobs:
         uses: actions/checkout@v2.3.2
         
       - name: Update the README locally
-        uses: jitterbit/get-changed-files@v1
+      - uses: lots0logs/gh-action-get-changed-files@2.1.4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
       - run: |
-          for changed_file in ${{ steps.files.outputs.new }}; do
+          for changed_file in ${{ steps.outputs.new }}; do
               echo "|${changed_file}|description|dependencies|options|${{ steps.date.outputs.date }}|" >> README.md
               echo "|${changed_file}|description|dependencies|options|${{ steps.date.outputs.date }}|"
           done
