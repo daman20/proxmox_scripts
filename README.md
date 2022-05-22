@@ -4,7 +4,7 @@
 These scripts are used solving common issues I have on Proxmox VE
 
 ## Scripts
-|Name|Usage|Dependencies|Options|Working As Of|
+|Name|Usage|Dependencies|Options|Last Tested PVE|
 |---|---|---|---|---|
 |rmvm.sh|Forceably stops and removes VM|None|$1 = VMID|7.1-12|
 |killvm.sh|Forceably stops VM|None|$1 = VMID|7.2-3|
