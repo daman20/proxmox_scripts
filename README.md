@@ -7,7 +7,7 @@ These scripts are used solving common issues I have on Proxmox VE
 |Name|Usage|Dependencies|Options|Last Tested PVE|
 |---|---|---|---|---|
 |rmvm.sh|Forceably stops and removes VM|None|$1 = VMID|7.1-12|
-|killvm.sh|Forceably stops VM|None|$1 = VMID|7.2-3|
+|killvm.sh|Forceably stops VM|None|$1 = VMID|7.2-5|
 |unlockStaleCIFS.sh|Removes issues with stale file lock on CIFS mounts|None|None|7.2-3|
 
 ## Notes
